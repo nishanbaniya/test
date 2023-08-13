@@ -3,6 +3,6 @@
 // alert(fav);
 price=Number(prompt("What is the original price?"));
 discount=Number(prompt("What is the discount percentage?")/100);
-discountedPrice=price-price*discount;
+discountedPrice=price*discount;
 alert(discountedPrice);
 console.log(discountedPrice);
