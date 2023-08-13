@@ -4,5 +4,8 @@
 price=Number(prompt("What is the original price?"));
 discount=Number(prompt("What is the discount percentage?")/100);
 discountedPrice=price*discount;
+finalPrice=price-discountedPrice;
 alert(discountedPrice);
-console.log(discountedPrice);
+console.log("Discounted price:",discountedPrice);
+alert(finalPrice);
+console.log(finalPrice);
