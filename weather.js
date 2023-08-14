@@ -12,3 +12,11 @@ else{
     console.log("Stay in house");
     alert("Stay in house");
 }
+
+//data types :
+//    let , var   , const
+ 
+////conditional operators
+// ==,===,>,<,<=,>=,!=,!==
+//condtional are used in statements to comapre variables values and/or data types.
+//they always return boolean- true or false*/
