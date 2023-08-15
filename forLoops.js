@@ -87,15 +87,88 @@
 
 
 //Sum of Array elements
-const sumArray=(value) =>{
-    let result=0;
+// const sumArray=(value) =>{
+//     let result=0;
 
-    for (let number of value ){
-    console.log(number) 
-    result =result+number
+//     for (let number of value ){
+//     console.log(number) 
+//     result =result+number
+//     }
+//     return {result}
+// }
+// const num=[10,20,30,40];
+// console.log(sumArray(num))
+
+//check maximum number in array
+// const max=(numbers) =>{
+//     let result=numbers[0]
+
+//     for (const number of numbers){
+//         if(result<number){
+//             result=number
+            
+//         }
+
+//     }
+//     return {result} 
+// }
+// const num=[0,5,4,3,8,1,3]
+// console.log(max(num))
+
+//sh
+// const letterCounter = (phrase) => {
+    
+//     let result=0
+//     for(const index in phrase){
+
+//     //console.log(Number(index)+1)
+//     //+1 gareko because counting 0 bata start hunxa
+//     result=Number(index)+1
+//     }
+//     //we can return result as an object as well by using squiggles
+//     //return{result}
+//     return result
+// }
+//    const phrase ='Hey,Can we hangout tonight?'
+// console.log(letterCounter(phrase))
+
+//check frequency
+const letterFrequency=(phrase)=>{
+    let frequency={}
+    for(const letter of phrase){
+     if(letter in frequency)  {
+        //frequency[letter] += 1
+        frequency[letter]++                 //same as above commented line
+     } else{
+        frequency[letter] = 1
+     }
     }
-    return {result}
+    return frequency
 }
-const num=[10,20,30,40];
-console.log(sumArray(num))
 
+console.log(letterFrequency('lol, haha how are you lol, haha'))
+
+
+// const wordFreq=(phrase)=>{
+//     let frequency={}
+//     let words=phrase.split(" ")
+//     for(const word of words ){
+//     //console.log(word)
+//     if(word in frequency) {
+//         frequency[word]+=1
+//     }else{
+//         frequency[word]=1
+//     }
+//     }
+//     //console.log(words)
+//      return frequency
+// }
+// console.log(wordFreq("lol what lol hahaha lol"))
+
+//Or using letterFrequency above made function
+const wordFrequency=(phrase)=>{
+    let words=phrase.split(" ")
+    return letterFrequency(words)
+}    
+const userInput=prompt("Enter the sentence:")
+console.log(wordFrequency(userInput))
