@@ -80,4 +80,4 @@ const person=[
 // console.log(result)
 
 //OR
-console.log(person.reduce((prev,curr)=> prev+ curr.age,0 ))
+console.log(person.reduce((prev,curr)=> prev+ curr.age, 0 ))

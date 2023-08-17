@@ -133,20 +133,20 @@
 // console.log(letterCounter(phrase))
 
 //check frequency
-const letterFrequency=(phrase)=>{
-    let frequency={}
-    for(const letter of phrase){
-     if(letter in frequency)  {
-        //frequency[letter] += 1
-        frequency[letter]++                 //same as above commented line
-     } else{
-        frequency[letter] = 1
-     }
-    }
-    return frequency
-}
+// const letterFrequency=(phrase)=>{
+//     let frequency={}
+//     for(const letter of phrase){
+//      if(letter in frequency)  {
+//         //frequency[letter] += 1
+//         frequency[letter]++                 //same as above commented line
+//      } else{
+//         frequency[letter] = 1
+//      }
+//     }
+//     return frequency
+// }
 
-console.log(letterFrequency('lol, haha how are you lol, haha'))
+// console.log(letterFrequency('hey'))
 
 
 // const wordFreq=(phrase)=>{
@@ -163,12 +163,31 @@ console.log(letterFrequency('lol, haha how are you lol, haha'))
 //     //console.log(words)
 //      return frequency
 // }
-// console.log(wordFreq("lol what lol hahaha lol"))
+//  console.log(wordFreq("lol what lol hahaha lol"))
 
-//Or using letterFrequency above made function
-const wordFrequency=(phrase)=>{
-    let words=phrase.split(" ")
-    return letterFrequency(words)
-}    
-const userInput=prompt("Enter the sentence:")
-console.log(wordFrequency(userInput))
+// //Or using letterFrequency above made function
+// const wordFrequency=(phrase)=>{
+//     let words=phrase.split(" ")
+//     return letterFrequency(words)
+// }    
+// const userInput=prompt("Enter the sentence:")
+// console.log(wordFrequency(userInput))
+
+//total word 
+// const wordFrequency =(phrase) => {
+//     console.log(phrase)
+//     //make a frequency object
+//     let frequency = {}
+//     wordssss = phrase.split(' ')
+//       //for loop
+//     for(const word in wordssss){
+//     //    if (word in frequency){
+//     //     frequency[word] += 1
+//     //    } else {
+//     //     frequency[word] = 1
+//        }
+//        frequency = Nmubers[word] +1
+//     }
+//       return frequency
+  
+//   console.log(wordFrequency('haha haha haha johnny johnny yes papa'))
