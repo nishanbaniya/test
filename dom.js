@@ -10,13 +10,13 @@
 // titleDiv.style.backgroundColor="red"
 
 
-// let redDiv=document.getElementById("red")
-// let yellowDiv=document.getElementById("yellow")
-// let greenDiv=document.getElementById("green")
+let redDiv=document.getElementById("red")
+let yellowDiv=document.getElementById("yellow")
+let greenDiv=document.getElementById("green")
 
-// redDiv.onclick=()=>console.log("You clicked red")
-// yellowDiv.onclick=()=>console.log("You clicked yellow")
-// greenDiv.onclick=()=>console.log("You clicked green")
+redDiv.onclick=()=>console.log("You clicked red")
+yellowDiv.onclick=()=>console.log("You clicked yellow")
+greenDiv.onclick=()=>console.log("You clicked green")
 
 // const squares=document.querySelectorAll(".colorSquare")
 //console.log(squares)
@@ -25,27 +25,29 @@
 // console.log(squares[1].value)
 // console.log(squares[2].value)
 
-const squares=document.querySelectorAll(".colorSquare")
-const timesClicked={"red":0, "yellow":0, "green":0}
-//forEach
-squares.forEach(square=>{
-    square.onclick=()=>{
-        timesClicked[square.value] +=1
-        square.innerText=timesClicked[square.value]
-        //console.log(square.value)
-    }    
-})
+// const squares=document.querySelectorAll(".colorSquare")
+// const timesClicked={"red":0, "yellow":0, "green":0}
+// //forEach
+// squares.forEach(square=>{
+//     square.onclick=()=>{
+//         timesClicked[square.value] +=1
+//         square.innerText=timesClicked[square.value]
+//         //console.log(square.value)
+//         console.log(timesClicked)
+//     }    
+// })
 
-const clearScores=()=>{
-    timesClicked.red=0
-    timesClicked.yellow=0
-    timesClicked.green=0
-    squares.forEach(square=>{
-        square.innerText=" "
-    })
-}
-const clearGameBtn=document.getElementById("clear-game")
-clearGameBtn.onclick=()=>clearScores()
+// const clearScores=()=>{
+//     timesClicked.red=0
+//     timesClicked.yellow=0
+//     timesClicked.green=0
+//     squares.forEach(square=>{
+//         square.innerText=" "
+//     })
+// }
+// const clearGameBtn=document.getElementById("clear-game")
+// clearGameBtn.onclick=()=>clearScores()
+
 
 
 
